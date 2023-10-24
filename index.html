@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <title>My comment system TS</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <container class="container">
+      <aside class="aside"></aside>
+      <main class="main">
+        <section class="section__top">
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+          <div class="section-top__text"></div>
+        </section>
+        <section class="section__bottom"></section>
+        <section class="comment">
+          <div class="comment__row">
+            <div class="comment__all">
+              <span>Комментарии</span>
+              <span class="comment-all__count">(0)</span>
+            </div>
+            <div class="comment__filter">
+              <div class="comment__sorting">
+                <button class="comment-sorting__text">
+                  По количеству оценок
+                </button>
+                <svg class="dropdoun__arrow"
+                  width="18"
+                  height="15"
+                  viewBox="0 0 18 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    opacity="0.4"
+                    d="M9 15L17.6603 0H0.339746L9 15Z"
+                    fill="black" />
+                </svg>
+              <ul class="dropdown__list">
+                <li class="dropdown__item"><img class='check-mark' src="img/Check_mark.svg" alt="галочка">
+                 <span>По дате</span> 
+                </li>
+                <li class="dropdown__item"><img class='check-mark' src="img/Check_mark.svg" alt="галочка">
+                 <span>По количеству оценок</span> 
+                </li>
+                <li class="dropdown__item"><img class='check-mark' src="img/Check_mark.svg" alt="галочка">
+                  <span>По актуальности</span>
+                </li>
+                <li class="dropdown__item"><img class='check-mark' src="img/Check_mark.svg" alt="галочка">
+                  <span>По количеству ответов</span>
+                </li>
+              </ul>
+            </div>
+              <div class="comment__favorit">
+                <button class="comment-favorit__text">Избранное</button>
+                <img src="img/Favorites.svg" alt="избранное" />
+              </div>
+             
+            </div>
+          </div>
+          <div class="comment__new">
+            <img class="user__avatar" alt="аватарка">
+            </img>
+            <div class="comment-new__contant">
+              <div class="comment-new__user">
+                <span class="user__name"></span>
+                <span class="user__text-counter">Макс. 1000 символов</span>
+                <span class="user__maxtext">Слишком длинное сообщение</span>
+              </div>
+              <form class="comment-new__form">
+                <textarea
+                  class="comment-new__text"
+                  type="text"
+                  placeholder="Введите текст сообщения..."
+                  maxlength="1000"></textarea>
+                <button
+                  class="comment-new__button button-notActiv"
+                  type="button" data-mode="comment"
+                  >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="comment__flow"></div>
+        </section>
+      </main>
+    <script src="build/NewComment.js"></script>
+    <script src="build/CommentSistem.js"></script>
+    <script src="build/DropdownList.js"></script>
+    <script src="build/CommentFlow.js"></script>
+    <script src="build/AnswerComment.js"></script>
+    <script src="build/Rating.js"></script>
+    <script src="build/Favorite.js"></script>
+    <script src="build/main.js"></script>
+  </body>
+</html>

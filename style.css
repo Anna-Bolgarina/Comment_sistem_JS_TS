@@ -1,0 +1,265 @@
+body {
+  font-family: Inter;
+  font-weight: 400;
+}
+.header {
+  max-width: 100%;
+  height: 101px;
+
+  background-color: #d9d9d9;
+}
+.container {
+  margin-top: 40px;
+  display: flex;
+}
+.aside {
+  min-width: 203px;
+  height: 1302px;
+
+  background-color: #d9d9d9;
+}
+.main {
+  max-width: 1022px;
+  margin-left: 86px;
+}
+.section__top {
+  display: grid;
+  grid-template-columns: repeat(2, 487px);
+  grid-template-rows: repeat(4, 61px);
+  grid-column-gap: 48px;
+  grid-row-gap: 30px;
+}
+.section-top__text {
+  background-color: #d9d9d9;
+}
+.section__bottom {
+  min-height: 168px;
+  margin-top: 40px;
+
+  background-color: #d9d9d9;
+}
+.comment {
+  margin-top: 40px;
+}
+.comment__row {
+  padding-top: 20px;
+  border-top: 3px solid #d9d9d9;
+
+  display: flex;
+}
+.comment__all {
+  font-weight: 500;
+  font-size: 20px;
+
+  border-bottom: 3px solid #000000;
+}
+.comment-all__count {
+  margin-left: 10px;
+  opacity: 40%;
+}
+.comment__filter {
+  margin-left: 100px;
+  display: flex;
+  gap: 40px;
+}
+.comment-sorting__text {
+  margin-right: 5px;
+  font-size: 16px;
+
+  border-bottom: 1px solid #000000;
+  opacity: 40%;
+}
+.comment-favorit__text {
+  margin-right: 5px;
+  font-size: 16px;
+
+  border-bottom: 1px solid #000000;
+  opacity: 40%;
+}
+.dropdown__list {
+  width: 229px;
+  padding: 5px;
+  margin-top: 10px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  font-size: 16px;
+
+  background-color: #fff;
+
+  position: absolute;
+  z-index: 1;
+
+  display: none;
+}
+.check-mark {
+  margin-top: 3px;
+  display: none;
+  position: absolute;
+}
+.dropdown__item {
+  margin: 5px;
+  display: flex;
+  opacity: 40%;
+}
+.dropdown__item span {
+  margin-left: 20px;
+}
+.dropdown__item:hover {
+  cursor: pointer;
+}
+.comment__new {
+  margin-top: 30px;
+
+  display: flex;
+  gap: 30px;
+}
+.user__avatar {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+}
+.user__name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #122ac0;
+}
+.user__text-counter {
+  margin-left: 372px;
+
+  font-size: 14px;
+  font-style: italic;
+  opacity: 40%;
+}
+.user__maxtext {
+  margin-left: 114px;
+  font-size: 14px;
+  color: #ff0000;
+  display: none;
+}
+.comment-new__form {
+  margin-top: 10px;
+  display: flex;
+  gap: 60px;
+}
+.comment-new__text {
+  width: 658px;
+  height: 61px;
+  padding: 15px;
+
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.comment-new__text::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 40%;
+}
+.comment-new__button {
+  width: 213px;
+  height: 61px;
+  padding: 20px;
+
+  background-color: #abd873;
+  cursor: pointer;
+  opacity: 40%;
+  border-radius: 5px;
+}
+.button-notActiv {
+  background-color: #a1a1a1;
+  cursor: default;
+}
+/*comment flow*/
+
+.comment__flow {
+  margin-top: 30px;
+}
+.user-flow__avatar {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+}
+.user-flow__name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #122ac0;
+}
+
+.comment-flow__comment {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.comment-flow__user {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.comment-flow__time {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.comment-flow__text {
+  margin-bottom: 15px;
+  max-width: 930px;
+  word-wrap: break-word;
+}
+.comment-flow__buttons {
+  display: flex;
+  gap: 20px;
+}
+.comment-flow__buttonAnswer {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4);
+
+  cursor: pointer;
+}
+.comment-flow__buttonAnswer img {
+  margin-right: 5px;
+}
+.comment-flow__buttonFavorite {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  gap: 5px;
+
+  cursor: pointer;
+}
+.comments__rating {
+  display: flex;
+  gap: 10px;
+}
+.likeCounter {
+  margin-top: 3px;
+}
+
+/*reply*/
+
+.commentBlock__reply {
+  margin-left: 80px;
+  margin-bottom: 20px;
+
+  display: flex;
+  gap: 30px;
+}
+
+.comments__preUserName {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  gap: 5px;
+}
+.comments__buttons {
+  display: flex;
+  gap: 20px;
+}
